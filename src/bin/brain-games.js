@@ -1,5 +1,5 @@
 #!/usr/bin/node
-import Greeting from '..';
+import getName from '..';
 
 console.log('Welcome to the Brain Games!');
-Greeting();
+getName();
