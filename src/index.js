@@ -4,7 +4,7 @@ import isEven from './isEven';
 
 export const getUser = () => {
   const userName = readlineSync.question('May I have your name? ');
-  console.log('Hello, ' + userName + '!\n');
+  console.log(`Hello, ${userName}!\n`);
   return userName;
 };
 
@@ -19,10 +19,10 @@ export const mainEven = () => {
   const userName = getUser();
   const iter = (user, times) => {
     const number = getRandomNum();
-    console.log('Question: ' + String(number));
+    console.log(`Question: ${String(number)}`);
     const answer = readlineSync.question('Your answer: ');
     if (times === 0 && correctAnswer(number) === answer) {
-      return console.log('Correct!  \nCongratulations, ' + user + '!');
+      return console.log(`Correct!  \nCongratulations, ${user}!`);
     } else if (correctAnswer(number) === answer) {
       console.log('Correct!');
       return iter(user, times - 1);
