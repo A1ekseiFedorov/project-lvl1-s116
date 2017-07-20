@@ -1,5 +1,6 @@
 #!/usr/bin/node
-import getName from '..';
+
+import { helloUser } from '..';
 
 console.log('Welcome to the Brain Games!');
-getName();
+helloUser();
