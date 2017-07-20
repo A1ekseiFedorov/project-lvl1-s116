@@ -2,13 +2,9 @@ import readlineSync from 'readline-sync';
 import getRandomNum from './getRandomNum';
 import isEven from './isEven';
 
-export const helloUser = () => {
+export const getUser = () => {
   const userName = readlineSync.question('May I have your name? ');
-  return console.log('Hello ' + userName + '!');
-};
-
-export const getName = () => {
-  const userName = readlineSync.question('May I have your name? ');
+  console.log('Hello, ' + userName + '!\n');
   return userName;
 };
 
@@ -20,7 +16,7 @@ const correctAnswer = (number) => {
 };
 
 export const mainEven = () => {
-  const userName = getName();
+  const userName = getUser();
   const iter = (user, times) => {
     const number = getRandomNum();
     console.log('Question: ' + String(number));

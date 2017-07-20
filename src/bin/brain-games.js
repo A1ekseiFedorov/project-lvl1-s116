@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-import { helloUser } from '..';
+import { getUser } from '..';
 
-console.log('Welcome to the Brain Games!');
-helloUser();
+console.log('Welcome to the Brain Games!\n');
+getUser();

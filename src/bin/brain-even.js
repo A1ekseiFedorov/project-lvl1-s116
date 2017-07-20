@@ -1,6 +1,6 @@
 #!/usr/bin/node
-import { mainEven } from '..';
+import { mainEven, getUser } from '..';
 
-console.log('Welcome to the Brain Games!');
-console.log('Answer "yes" if number even otherwise answer "no".');
+console.log('\nWelcome to the Brain Games!');
+console.log('Answer "yes" if number even otherwise answer "no".\n');
 mainEven();
